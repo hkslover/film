@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-language" content="zh-CN"/>
+<meta http-equiv="pragma" content="no-cache"/>
+<meta http-equiv="expires" content="0"/>
+<meta name="referrer" content="never"/>
+<meta name="renderer" content="webkit"/>
+<meta name="msapplication-tap-highlight" content="no"/>
+<meta name="HandheldFriendly" content="true"/>
+<meta name="x5-page-mode" content="app"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/><!-- 强制使用当前版本的兼容模式 -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/><!-- 
+手机H5兼容模式 -->
+<script type="text/javascript" src="./include/jquery.min.js"></script>
+  <script type="text/javascript"  src="./include/class.min.js" ></script>
+    <link href="include/jquery.autocomplete.css" rel="stylesheet">
+<script type="text/javascript" src="./include/jquery.autocomplete.js"></script>
+
+
+
+<title>影视搜索</title>
+<style>
+
+html,body{
+overflow:auto !important;  
+width:100%;
+height: 100%; 
+margin: 0;
+padding: 0;
+
+}
+
+body{
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header-info {
+    width: 60%;
+    margin: auto;
+    font-size: 14px;
+    color: #EAEADF;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 25px;
+    margin-top: 22px;
+    font-family: miranafont,"Hiragino Sans GB",STXihei,"Microsoft YaHei",SimSun,sans-serif;
+    letter-spacing: 0;
+    line-height: 30px;
+    border-radius: 50px;
+}
+
+.header-info p {
+    margin: 0
+}
+
+
+
+  
+
+ /* text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0); */
+
+
+
+#word{
+background: #fff;
+color: #000;
+max-height:170px;
+overflow-y:auto;
+overflow-x:hidden;
+}
+
+
+h1{ color:red;}
+h2{color:green;}
+h3{color:blue;}
+h4{color:blue;font-size:50px}
+
+*{ box-sizing: border-box;}
+		
+ div.search {padding: 30px 0;}	
+        form {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        input, button {
+            border: none;
+            outline: none;
+			color: blue;
+        }
+
+        input {
+            width: 100%;
+            height: 42px;
+            padding-left: 13px;
+        }
+
+        button {
+            height: 42px;
+            width: 42px;
+            cursor: pointer;
+            position: absolute;
+        }
+
+       /*搜索框6*/
+        .bar6 {background: 00FFFF;}
+		.bar6    background: rgba(0, 0, 0, 0.5);
+        .bar6 input {
+            border: 2px solid #FF0000;
+            border-radius: 5px;
+            background: transparent;
+            top: 0;
+            right: 0;
+        }
+        .bar6 button {
+            background: #57ccd9;
+            border-radius: 0 5px 5px 0;
+            width: 60px;
+            top: 0;
+            right: 0;
+        }
+        .bar6 button:before {
+            content: "搜索";
+            font-size: 13px;
+            color: #0F0F0F;
+        }
+        
+
+
+
+</style>
+</head>
+<body >
+
+
+
+<div class="search bar6">
+<form action="/search/" method="get">
+<input id="wd"  type="text" name="wd"  placeholder="请输入要搜索的视频名称" >
+<button type="submit"></button> 
+<div id="word"  ></div>
+</div>
+</form>
+
+
+<div id="footer" class="footer" ></div>
+</div>
+</body>
+
+
+
+</html>
