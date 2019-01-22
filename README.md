@@ -21,3 +21,4 @@ wd        |http://127.0.0.1/search/?wd=name
 ![](http://ww1.sinaimg.cn/large/0072BNKcly1fzfcsmdoipj30t90663yv.jpg)
 
 
+@http://yongjiuzy.cc/  Thank提供影视资源
